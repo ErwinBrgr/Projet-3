@@ -4,6 +4,11 @@ var canvas obj = {
   canvasHeight : "220px",
   canvasDiv : $('canvasDiv'),
   context : canvas.getContext("2d");
+  var clickX : new Array();
+  var clickY : new Array();
+  var clickDrag : new Array();
+  var paint;
+
 
 
   addClick = function(x,y,z){
@@ -71,7 +76,3 @@ $('#canvas').mouseleave(function(e){
   paint = false;
 });
 
-var clickX = new Array();
-var clickY = new Array();
-var clickDrag = new Array();
-var paint;
